@@ -1,0 +1,28 @@
+{
+  "fonts": [
+    {
+      "name": "Web437_IBM_VGA_8x14",
+      "file": "Web437_IBM_VGA_8x14.woff"
+    },
+    {
+      "name": "Web437_IBM_VGA_9x8",
+      "file": "Web437_IBM_VGA_9x8.woff"
+    },
+    {
+      "name": "WebPlus_HP_100LX_6x8",
+      "file": "WebPlus_HP_100LX_6x8.woff"
+    },
+    {
+      "name": "WebPlus_IBM_CGAthin",
+      "file": "WebPlus_IBM_CGAthin.woff"
+    },
+    {
+      "name": "WebPlus_IBM_VGA_8x16",
+      "file": "WebPlus_IBM_VGA_8x16.woff"
+    },
+    {
+      "name": "WebPlus_ToshibaSat_8x14",
+      "file": "WebPlus_ToshibaSat_8x14.woff"
+    }
+  ]
+}

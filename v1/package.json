@@ -1,0 +1,35 @@
+{
+  "name": "htmlansi",
+  "version": "0.0.1",
+  "description": "Convert textmode art to faithful static HTML",
+  "author": "runv.sh <runawaydevil@pm.me>",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "htmlansi": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "node --experimental-vm-modules node_modules/tsx/cli.mjs src/cli.ts",
+    "convert": "node dist/cli.js --font WebPlus_ToshibaSat_8x14",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": ["ansi", "ans", "html", "bbs", "sauce", "cp437", "pablodraw"],
+  "license": "MIT",
+  "dependencies": {
+    "@xterm/headless": "^5.4.0",
+    "@xterm/addon-serialize": "^0.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0",
+    "tsx": "^4.19.0"
+  },
+  "files": ["dist", "README.md"]
+}

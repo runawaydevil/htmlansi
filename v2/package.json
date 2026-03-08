@@ -1,0 +1,37 @@
+{
+  "name": "htmlansi",
+  "version": "2.0.0",
+  "description": "Multimodal converter: textmode, raster, vector to HTML",
+  "author": "runv.sh <runawaydevil@pm.me>",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "convert2": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "convert2": "node dist/cli.js convert --in in --out out",
+    "dev": "node --experimental-vm-modules node_modules/tsx/cli.mjs src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": ["ansi", "html", "textmode", "raster", "vector", "convert"],
+  "license": "MIT",
+  "dependencies": {
+    "@xterm/headless": "^5.4.0",
+    "@xterm/addon-serialize": "^0.14.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0",
+    "tsx": "^4.19.0"
+  },
+  "files": ["dist", "README.md"]
+}
